@@ -41,6 +41,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .list {
@@ -327,7 +329,7 @@ span.accent {
 
 .hero {
   text-align: center;
-  padding: 118px 0px;
+  padding: 118px px;
 }
 
 .hero-title {
@@ -338,6 +340,10 @@ span.accent {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.feature-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .feature-icon {
@@ -409,10 +415,15 @@ span.accent {
 }
 
 .team-item {
+  padding-bottom: 24px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .member-name {
@@ -449,17 +460,27 @@ span.accent {
   margin-left: 10px;
 }
 
+.clients.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .clients.link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

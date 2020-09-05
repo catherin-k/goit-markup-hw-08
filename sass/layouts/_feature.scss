@@ -6,14 +6,20 @@
 //   display: flex;
 //   flex-wrap: wrap;
 // }
-// .feature-item {
-//   width: calc((100% - 30px * 3) / 4);
-//   margin-right: 30px;
+.feature-item {
 
-//   &:nth-child(4n) {
-//     margin-right: 0;
-//   }
-// }
+  @include for-size(phone-only) {
+    &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  
+  // width: calc((100% - 30px * 3) / 4);
+  // margin-right: 30px;
+
+  // &:nth-child(4n) {
+  //   margin-right: 0;
+  // }
+}
 
 .feature-icon {
   height: 120px;

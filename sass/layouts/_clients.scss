@@ -1,21 +1,21 @@
 .clients.list {
-  // display: flex;
-  // flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
-.clients-item {
-  // width: calc((100% - 30px * 5) / 6);
-  // margin-right: 30px;
+// .clients-item {
+//   width: calc((100% - 30px * 5) / 6);
+//   margin-right: 30px;
 
-  // &:nth-child(6n) {
-  //   margin-right: 0;
-  // }
-}
+//   &:nth-child(6n) {
+//     margin-right: 0;
+//   }
+// }
 
 .clients.link {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  flex-grow: 1;
   height: 90px;
 
   border: 1px solid $icon-social-main-color;
