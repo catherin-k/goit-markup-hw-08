@@ -1,0 +1,78 @@
+.button-main {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $white-color;
+  background-color: $accent-color;
+  transition: color $transition-duration cubic-bezier(0.4, 0, 0.2, 1),
+    background-color $transition-duration cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $accent-color;
+    background-color: $background-color-main;
+  }
+}
+
+// footer-button
+
+.subscribe-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-width: 200px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $white-color;
+  background-color: $accent-color;
+}
+.subscribe-button::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons/icon-send.svg);
+}
+
+// modal-button
+
+.button-box {
+  text-align: center;
+}
+.button-submit {
+  display: inline-block;
+  padding: 10px;
+  min-width: 200px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

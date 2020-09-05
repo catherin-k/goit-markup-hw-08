@@ -1,0 +1,43 @@
+// .no-bottom-padding {
+//   padding-bottom: 0;
+// }
+
+// .feature.list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+// .feature-item {
+//   width: calc((100% - 30px * 3) / 4);
+//   margin-right: 30px;
+
+//   &:nth-child(4n) {
+//     margin-right: 0;
+//   }
+// }
+
+.feature-icon {
+  height: 120px;
+  background-color: $background-color-second;
+  padding: 25px 0px;
+  text-align: center;
+}
+
+.feature-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+.feature-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}

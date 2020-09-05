@@ -1,0 +1,24 @@
+.address {
+  margin-top: 20px;
+}
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address .link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  color: $footer-contacts-color;
+  transition: color $transition-duration cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address .address-map {
+  color: $white-color;
+}
+.link:hover,
+.link:focus {
+  color: $accent-color;
+}

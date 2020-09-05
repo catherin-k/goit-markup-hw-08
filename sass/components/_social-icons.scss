@@ -1,0 +1,23 @@
+.social-icon.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: background-color $transition-duration cubic-bezier(0.4, 0, 0.2, 1),
+    fill $transition-duration cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.social-icon {
+  fill: $icon-social-main-color;
+
+  .social-icon.link:hover &,
+  .social-icon.link:focus & {
+    fill: $white-color;
+  }
+}

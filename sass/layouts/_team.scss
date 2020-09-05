@@ -1,0 +1,50 @@
+.section.team {
+  background-color: $background-color-second;
+}
+// .list.team {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+.team-item {
+  // width: calc((100% - 30px * 3) / 4);
+  // margin-right: 30px;
+  // padding-bottom: 24px;
+  background-color: $background-color-main;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  // &:nth-child(4n) {
+  //   margin-right: 0;
+  // }
+}
+
+.member-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}
+.position {
+  margin-top: 0px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+}
+.team.socials {
+  display: flex;
+  justify-content: center;
+}
+.socials.list .item + .item {
+  margin-left: 10px;
+}
