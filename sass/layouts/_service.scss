@@ -1,5 +1,9 @@
 .service.section {
   display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
 }
 .service.list {
   display: flex;

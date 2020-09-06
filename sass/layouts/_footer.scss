@@ -15,7 +15,9 @@ footer {
     justify-content: space-around;
   }
 
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: baseline;
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }

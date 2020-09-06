@@ -25,12 +25,17 @@
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     display: block;
   }
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 .nav-auth .item + .item {
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     margin-top: 10px;
   }
-  // margin-left: 30px;
+  @include for-size(desktop) {
+    margin-left: 30px;
+  }
 }
 .nav-site .link,
 .nav-auth .link {
@@ -65,11 +70,14 @@
 
 .nav-auth-icon {
   vertical-align: middle;
-  // margin-right: 10px;
+
   fill: currentColor;
 
   @include for-size(tablet-landscape) {
     margin-right: 8px;
+  }
+  @include for-size(tablet-landscape) {
+    margin-right: 10px;
   }
 }
 
