@@ -86,6 +86,13 @@ img {
   padding-top: 60px;
 }
 
+@media (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
 .section .title {
   margin-top: 0;
   margin-bottom: 30px;
