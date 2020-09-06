@@ -16,9 +16,12 @@
     color: $accent-color;
   }
 }
-// .nav-main .logo {
-//   margin-right: 85px;
-// }
+.nav-main .logo {
+  @include for-size(tablet-landscape) {
+    margin-right: 88px;
+  }
+  // margin-right: 85px;
+}
 .logo-footer {
   color: $white-color;
 }

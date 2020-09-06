@@ -8,8 +8,11 @@
   margin-right: auto;
 }
 .nav-site {
-  // display: flex;
   display: none;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+  }
 }
 
 .nav-site .item + .item {
@@ -17,11 +20,17 @@
 }
 .nav-auth {
   display: none;
-  // display: flex;
   align-items: center;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    display: block;
+  }
 }
 .nav-auth .item + .item {
-  margin-left: 30px;
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    margin-top: 10px;
+  }
+  // margin-left: 30px;
 }
 .nav-site .link,
 .nav-auth .link {
@@ -34,6 +43,11 @@
 }
 .nav-auth .link {
   color: $primary-text-color;
+
+  @include for-size(tablet-landscape) {
+    font-size: 12px;
+    line-height: 1.167;
+  }
 }
 .nav-site .item {
   position: relative;
@@ -51,8 +65,12 @@
 
 .nav-auth-icon {
   vertical-align: middle;
-  margin-right: 10px;
+  // margin-right: 10px;
   fill: currentColor;
+
+  @include for-size(tablet-landscape) {
+    margin-right: 8px;
+  }
 }
 
 .link:hover,

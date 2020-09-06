@@ -225,6 +225,12 @@ img {
   color: #2196f3;
 }
 
+@media (min-width: 768px) {
+  .nav-main .logo {
+    margin-right: 88px;
+  }
+}
+
 .logo-footer {
   color: #ffffff;
 }
@@ -256,6 +262,14 @@ span.accent {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .nav-site {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .nav-site .item + .item {
   margin-left: 50px;
 }
@@ -267,8 +281,16 @@ span.accent {
           align-items: center;
 }
 
-.nav-auth .item + .item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-auth {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-auth .item + .item {
+    margin-top: 10px;
+  }
 }
 
 .nav-site .link,
@@ -284,6 +306,13 @@ span.accent {
 
 .nav-auth .link {
   color: #757575;
+}
+
+@media (min-width: 768px) {
+  .nav-auth .link {
+    font-size: 12px;
+    line-height: 1.167;
+  }
 }
 
 .nav-site .item {
@@ -303,8 +332,13 @@ span.accent {
 
 .nav-auth-icon {
   vertical-align: middle;
-  margin-right: 10px;
   fill: currentColor;
+}
+
+@media (min-width: 768px) {
+  .nav-auth-icon {
+    margin-right: 8px;
+  }
 }
 
 .link:hover,
