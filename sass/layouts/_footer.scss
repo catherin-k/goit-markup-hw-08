@@ -6,6 +6,16 @@ footer {
 .footer {
   text-align: center;
 
+  @include for-size(tablet-landscape) {
+    display: flex;
+
+    align-items: baseline;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   // display: flex;
   // justify-content: space-between;
   // align-items: baseline;

@@ -1,6 +1,11 @@
-// .subscribe-box {
-//   width: 570px;
-// }
+.subscribe-box {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    flex-basis: 450px;
+    margin-top: 60px;
+  }
+
+  // width: 570px;
+}
 .subscribe-form {
   // display: flex;
 }

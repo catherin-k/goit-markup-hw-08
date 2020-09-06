@@ -1,10 +1,11 @@
 .section.team {
   background-color: $background-color-second;
 }
-// .list.team {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.list.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .team-item {
   // width: calc((100% - 30px * 3) / 4);
   // margin-right: 30px;
@@ -17,6 +18,19 @@
   @media screen and (max-width: $tablet - 1) {
     &:not(:last-child) {
       margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    width: calc((100% - 30px * 1) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
   }
   // &:nth-child(4n) {

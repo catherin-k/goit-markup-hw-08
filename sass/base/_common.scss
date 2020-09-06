@@ -34,7 +34,6 @@ img {
 
   @include for-size(tablet-portrait) {
     width: 480px;
-    outline: 2px solid blue;
   }
   @include for-size(tablet-landscape) {
     width: 768px;
