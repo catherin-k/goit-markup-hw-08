@@ -3,8 +3,10 @@ footer {
   padding-bottom: 60px;
   background-color: $background-color-footer;
 }
-// .footer {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: baseline;
-// }
+.footer {
+  text-align: center;
+
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: baseline;
+}

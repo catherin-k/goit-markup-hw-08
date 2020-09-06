@@ -1,5 +1,14 @@
+.join-us-box {
+  @media screen and (max-width: $tablet - 1) {
+    margin-bottom: 60px;
+  }
+}
+
 .join-us.list {
   display: flex;
+  @media screen and (max-width: $desktop - 1) {
+    justify-content: center;
+  }
 
   & .item + .item {
     margin-left: 10px;
