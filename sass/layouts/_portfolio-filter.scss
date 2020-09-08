@@ -2,6 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+
+  @include for-size(tablet-landscape) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+  }
   // justify-content: center;
   // margin-bottom: 50px;
 }
@@ -9,8 +18,10 @@
 .filter .item {
   margin-right: 8px;
 
-  &:nth-child(-n + 3) {
-    margin-bottom: 15px;
+  @media screen and (max-width: $tablet - 1) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
   }
 }
 
