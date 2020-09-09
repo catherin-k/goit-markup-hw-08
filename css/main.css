@@ -213,6 +213,14 @@ img {
   display: none;
 }
 
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .menu-button {
     display: none;
