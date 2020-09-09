@@ -1,5 +1,15 @@
 .page.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
+
+  @include for-size(tablet-landscape) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
