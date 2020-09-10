@@ -11,8 +11,6 @@
   @include for-size(desktop) {
     margin-bottom: 50px;
   }
-  // justify-content: center;
-  // margin-bottom: 50px;
 }
 
 .filter .item {
@@ -25,9 +23,6 @@
   }
 }
 
-// .filter .item + .item {
-//   margin-left: 8px;
-// }
 .filter .button {
   padding: 6px 22px;
   font-weight: 500;

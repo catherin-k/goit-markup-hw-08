@@ -1,6 +1,8 @@
-// .no-bottom-padding {
-//   padding-bottom: 0;
-// }
+.no-bottom-padding {
+  @include for-size(desktop) {
+    padding-bottom: 0;
+  }
+}
 
 .feature.list {
   display: flex;
