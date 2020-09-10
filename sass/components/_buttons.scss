@@ -89,6 +89,8 @@
   .icon-cross {
     display: none;
   }
+  transition: fill $transition-duration cubic-bezier(0.4, 0, 0.2, 1);
+
   &.is-open .icon-cross {
     display: block;
   }
@@ -98,5 +100,10 @@
 
   @include for-size(tablet-landscape) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
   }
 }

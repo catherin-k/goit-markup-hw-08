@@ -49,29 +49,39 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu-button is-open">
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-cross" href="./images/sprite.svg#icon-close-40px">
-               
-            </use>
-            <use class="icon-menu" href="./images/sprite.svg#icon-menu-40px">
-
-            </use>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/sprite.svg#icon-close-40px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/sprite.svg#icon-menu-40px"
+            ></use>
           </svg>
         </button>
       </div>
       <!-- Menu-mobile -->
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <ul class="mobile-site list">
-            <li class="item">
-              <a href="./index.html" class="link current">Студия</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
-        </nav>
+          <li class="item">
+            <a href="./index.html" class="link current">Студия</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li class="item"><a href="" class="link">Контакты</a></li>
+        </ul>
 
         <ul class="mobile-auth list">
           <li class="item">
@@ -809,5 +819,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
