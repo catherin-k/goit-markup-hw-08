@@ -55,6 +55,7 @@
 }
 .overlay {
   position: absolute;
+
   top: 0;
   left: 0;
   opacity: 0;
@@ -87,11 +88,24 @@
 }
 .work .desc {
   margin: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.556;
   letter-spacing: 0.03em;
   color: $white-color;
   background-color: rgba(33, 150, 243, 0.9);
+
+  @media screen and (max-width: $mobile - 1) {
+    padding: 40px 24px 100px 24px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  @include for-size(tablet-landscape) {
+    padding: 49px 24px;
+  }
+  @include for-size(desktop) {
+    padding: 63px 24px;
+  }
 }
