@@ -36,14 +36,43 @@
       margin-right: 0;
     }
   }
+  &::before {
+    content: " ";
+    display: block;
+
+    height: 120px;
+    background-color: $background-color-second;
+    padding: 25px 0px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.feature-icon {
-  height: 120px;
-  background-color: $background-color-second;
-  padding: 25px 0px;
-  text-align: center;
+.icon-antenna::before {
+  content: " ";
+  background-image: url(../../images/icons/features/antenna.svg);
 }
+
+.icon-clock::before {
+  content: " ";
+  background-image: url(../../images/icons/features/clock.svg);
+}
+.icon-diagram::before {
+  content: " ";
+  background-image: url(../../images/icons/features/vector.svg);
+}
+
+.icon-astronaut::before {
+  content: " ";
+  background-image: url(../../images/icons/features/astronaut.svg);
+}
+// .feature-icon {
+//   height: 120px;
+//   background-color: $background-color-second;
+//   padding: 25px 0px;
+//   text-align: center;
+// }
 
 .feature-title {
   margin-top: 30px;
